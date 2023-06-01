@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-<title>Preskool - Inbox</title>
+<title>Preskool - Exam</title>
 
 <link rel="shortcut icon" href="assets/img/favicon.png">
 
@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="css/fontawesome.min.css">
 <link rel="stylesheet" href="css/all.min.css">
 
+<link rel="stylesheet" href="css/datatables.min.css">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,7 +30,7 @@
 
 <div class="header-left">
 <a href="index.html" class="logo">
-<img src="assets/img/logo.png" alt="Logo">
+<img src="images/cnc.jpg" alt="Logo">
 </a>
 <a href="index.html" class="logo logo-small">
 <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
@@ -148,7 +150,7 @@
 <span class="user-img">
 <img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor">
 <div class="user-text">
-<h6>ZAYN</h6>
+<h6>Ryan Taylor</h6>
 <p class="text-muted mb-0">Administrator</p>
 </div>
 </span>
@@ -159,7 +161,7 @@
 <img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
 </div>
 <div class="user-text">
-<h6>ZAYN</h6>
+<h6>Ryan Taylor</h6>
 <p class="text-muted mb-0">Administrator</p>
 </div>
 </div>
@@ -224,44 +226,43 @@
 </ul>
 </li>
 <li class="submenu">
-    <li class="submenu">
-        <a href="#"><i class="fas fa-clipboard"></i> <span> HOD</span> <span class="menu-arrow"></span></a>
-        <ul>
-            <li><a href="students.html">Student List</a></li>
-            <li><a href="student-details.html">Student View</a></li>
-            <li><a href="add-student.html">Student Add</a></li>
-            <li><a href="edit-student.html">Student Edit</a></li>
-            <li><a href="teacher-details.html">Teacher View</a></li>
-        <li><a href="add-teacher.html">Teacher Add</a></li>
-        <li><a href="edit-teacher.html">Teacher Edit</a></li>
-            </ul>
-        </li>
-        <li class="menu-title">
-        <span>Management</span>
-        </li>
-        <li>
-        <a href="holiday.html"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
-        </li>
-        <li>
-        <a href="exam.html"><i class="fas fa-clipboard-list"></i> <span>Exam list</span></a>
-        </li>
-        <li>
-        <a href="event.html"><i class="fas fa-calendar-day"></i> <span>Events</span></a>
-        </li>
-        <li>
-        <a href="library.html"><i class="fas fa-book"></i> <span>Library</span></a>
-        </li>
-        <li class="menu-title">
-        <span>Pages</span>
-        </li>
-        <li class="submenu">
-        <a href="#"><i class="fas fa-shield-alt"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
-        <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="forgot-password.html">Forgot Password</a></li>
-        <li><a href="error-404.html">Error Page</a></li>
+    <a href="#"><i class="fas fa-clipboard"></i> <span> HOD</span> <span class="menu-arrow"></span></a>
+    <ul>
+        <li><a href="students.html">Student List</a></li>
+        <li><a href="student-details.html">Student View</a></li>
+        <li><a href="add-student.html">Student Add</a></li>
+        <li><a href="edit-student.html">Student Edit</a></li>
+        <li><a href="teacher-details.html">Teacher View</a></li>
+    <li><a href="add-teacher.html">Teacher Add</a></li>
+    <li><a href="edit-teacher.html">Teacher Edit</a></li>
         </ul>
+    </li>
+    <li class="menu-title">
+    <span>Management</span>
+    </li>
+    <li>
+    <a href="holiday.html"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
+    </li>
+    <li>
+    <a href="exam.html"><i class="fas fa-clipboard-list"></i> <span>Exam list</span></a>
+    </li>
+    <li>
+    <a href="event.html"><i class="fas fa-calendar-day"></i> <span>Events</span></a>
+    </li>
+    <li>
+    <a href="library.html"><i class="fas fa-book"></i> <span>Library</span></a>
+    </li>
+    <li class="menu-title">
+    <span>Pages</span>
+    </li>
+    <li class="submenu">
+    <a href="#"><i class="fas fa-shield-alt"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
+    <ul>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="forgot-password.html">Forgot Password</a></li>
+    <li><a href="error-404.html">Error Page</a></li>
+    </ul>
 <li>
 <a href="blank-page.html"><i class="fas fa-file"></i> <span>Blank Page</span></a>
 </li>
@@ -298,226 +299,223 @@
 <div class="content container-fluid">
 
 <div class="page-header">
-<div class="row">
+<div class="row align-items-center">
 <div class="col">
-<h3 class="page-title">Inbox</h3>
+<h3 class="page-title">Exam</h3>
 <ul class="breadcrumb">
 <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-<li class="breadcrumb-item active">Inbox</li>
+<li class="breadcrumb-item active">Exam</li>
 </ul>
 </div>
 </div>
 </div>
 
 <div class="row">
-<div class="col-lg-3 col-md-4">
-<div class="compose-btn">
-<a href="compose.html" class="btn btn-primary btn-block">
-Compose
-</a>
-</div>
-<ul class="inbox-menu">
-<li class="active">
-<a href="#"><i class="fas fa-download"></i> Inbox <span class="mail-count">(5)</span></a>
-</li>
-<li>
-<a href="#"><i class="far fa-star"></i> Important</a>
-</li>
-<li>
-<a href="#"><i class="far fa-paper-plane"></i> Sent Mail</a>
-</li>
-<li>
-<a href="#"><i class="far fa-file-alt"></i> Drafts <span class="mail-count">(13)</span></a>
-</li>
-<li>
-<a href="#"><i class="far fa-trash-alt"></i> Trash</a>
-</li>
-</ul>
-</div>
-<div class="col-lg-9 col-md-8">
-<div class="card">
+<div class="col-sm-12">
+<div class="card card-table">
 <div class="card-body">
-<div class="email-header">
-<div class="row">
-<div class="col top-action-left">
-<div class="float-start">
-<div class="btn-group dropdown-action">
-<button type="button" class="btn btn-white dropdown-toggle" data-bs-toggle="dropdown">Select <i class="fas fa-angle-down"></i></button>
-<div class="dropdown-menu">
-<a class="dropdown-item" href="#">All</a>
-<a class="dropdown-item" href="#">None</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Read</a>
-<a class="dropdown-item" href="#">Unread</a>
+
+<div class="page-header">
+<div class="row align-items-center">
+<div class="col">
+<h3 class="page-title">Exam</h3>
 </div>
-</div>
-<div class="btn-group dropdown-action">
-<button type="button" class="btn btn-white dropdown-toggle" data-bs-toggle="dropdown">Actions <i class="fas fa-angle-down"></i></button>
-<div class="dropdown-menu">
-<a class="dropdown-item" href="#">Reply</a>
-<a class="dropdown-item" href="#">Forward</a>
-<a class="dropdown-item" href="#">Archive</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Mark As Read</a>
-<a class="dropdown-item" href="#">Mark As Unread</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Delete</a>
-</div>
-</div>
-<div class="btn-group dropdown-action">
-<button type="button" class="btn btn-white dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-folder"></i> <i class="fas fa-angle-down"></i></button>
-<div role="menu" class="dropdown-menu">
-<a class="dropdown-item" href="#">Social</a>
-<a class="dropdown-item" href="#">Forums</a>
-<a class="dropdown-item" href="#">Updates</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Spam</a>
-<a class="dropdown-item" href="#">Trash</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">New</a>
-</div>
-</div>
-<div class="btn-group dropdown-action">
-<button type="button" data-bs-toggle="dropdown" class="btn btn-white dropdown-toggle"><i class="fas fa-tags"></i> <i class="fas fa-angle-down"></i></button>
-<div role="menu" class="dropdown-menu">
-<a class="dropdown-item" href="#">Work</a>
-<a class="dropdown-item" href="#">Family</a>
-<a class="dropdown-item" href="#">Social</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Primary</a>
-<a class="dropdown-item" href="#">Promotions</a>
-<a class="dropdown-item" href="#">Forums</a>
-</div>
-</div>
-<div class="btn-group dropdown-action mail-search">
-<input type="text" placeholder="Search Messages" class="form-control search-message">
+<div class="col-auto text-end float-end ms-auto download-grp">
+<a href="#" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Download</a>
+<a href="add-exam.html" class="btn btn-primary"><i class="fas fa-plus"></i></a>
 </div>
 </div>
 </div>
-<div class="col-auto top-action-right">
-<div class="text-end">
-<button type="button" title="Refresh" data-bs-toggle="tooltip" class="btn btn-white d-none d-md-inline-block"><i class="fas fa-sync-alt"></i></button>
-<div class="btn-group">
-<a class="btn btn-white"><i class="fas fa-angle-left"></i></a>
-<a class="btn btn-white"><i class="fas fa-angle-right"></i></a>
-</div>
-</div>
-<div class="text-end">
-<span class="text-muted d-none d-md-inline-block">Showing 10 of 112 </span>
-</div>
-</div>
-</div>
-</div>
-<div class="email-content">
+
 <div class="table-responsive">
-<table class="table table-inbox table-hover">
-<thead>
+<table class="table border-0 star-student table-hover table-center mb-0 datatable table-striped">
+<thead class="student-thread">
 <tr>
-<th colspan="6">
-<input type="checkbox" class="checkbox-all">
-</th>
+<th>Exam Name</th>
+<th>Class</th>
+<th>Subject</th>
+<th>Start Time</th>
+<th>End Time</th>
+<th>Date</th>
+<th class="text-end">Action</th>
 </tr>
 </thead>
 <tbody>
-<tr class="unread clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Class Test</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="fas fa-star starred"></i></span></td>
-<td class="name">John Doe</td>
-<td class="subject">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</td>
-<td><i class="fas fa-paperclip"></i></td>
-<td class="mail-date">13:14</td>
+<td>10</td>
+<td>English</td>
+<td>10:00 AM</td>
+<td>01:00 PM</td>
+<td>23 Apr 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
+</td>
 </tr>
-<tr class="unread clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Half Yearly</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">Envato Account</td>
-<td class="subject">Important account security update from Envato</td>
-<td></td>
-<td class="mail-date">8:42</td>
+<td>1</td>
+<td>Botony</td>
+<td>10:00 AM</td>
+<td>01:00 PM</td>
+<td>23 Apr 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
+</td>
 </tr>
-<tr class="clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Quaterly</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">Twitter</td>
-<td class="subject">HRMS Bootstrap Admin Template</td>
-<td></td>
-<td class="mail-date">30 Nov</td>
+<td>9</td>
+<td>Biology</td>
+<td>01:00 PM</td>
+<td>04:00 PM</td>
+<td>26 Nov 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
+</td>
 </tr>
-<tr class="unread clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Class Test</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">Richard Parker</td>
-<td class="subject">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</td>
-<td></td>
-<td class="mail-date">18 Sep</td>
+<td>8</td>
+<td>Science</td>
+<td>01:00 PM</td>
+<td>04:00 PM</td>
+<td>18 Sep 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
+</td>
 </tr>
-<tr class="clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Quaterly</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">John Smith</td>
-<td class="subject">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</td>
-<td></td>
-<td class="mail-date">21 Aug</td>
+<td>7</td>
+<td>History</td>
+<td>01:00 PM</td>
+<td>04:00 PM</td>
+<td>23 Jul 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
+</td>
 </tr>
-<tr class="clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Class Test</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">me, Robert Smith (3)</td>
-<td class="subject">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</td>
-<td></td>
-<td class="mail-date">1 Aug</td>
+<td>2</td>
+<td>Biology</td>
+<td>10:00 AM</td>
+<td>01:00 PM</td>
+<td>15 Oct 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
+</td>
 </tr>
-<tr class="unread clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Half Yearly</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">Codecanyon</td>
-<td class="subject">Welcome To Codecanyon</td>
-<td></td>
-<td class="mail-date">Jul 13</td>
+<td>6</td>
+<td>Botony</td>
+<td>10:00 AM</td>
+<td>01:00 PM</td>
+<td>02 Jun 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
+</td>
 </tr>
-<tr class="clickable-row">
+<tr>
 <td>
-<input type="checkbox" class="checkmail">
+<h2>
+<a>Class Test</a>
+</h2>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">Richard Miles</td>
-<td class="subject">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</td>
-<td><i class="fas fa-paperclip"></i></td>
-<td class="mail-date">May 14</td>
-</tr>
-<tr class="unread clickable-row">
-<td>
-<input type="checkbox" class="checkmail">
+<td>12</td>
+<td>Mathematics</td>
+<td>10:00 AM</td>
+<td>01:00 PM</td>
+<td>23 Apr 2020</td>
+<td class="text-end">
+<div class="actions">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<i class="feather-eye"></i>
+</a>
+<a href="edit-exam.html" class="btn btn-sm bg-danger-light">
+<i class="feather-edit"></i>
+</a>
+</div>
 </td>
-<td><span class="mail-important"><i class="far fa-star"></i></span></td>
-<td class="name">John Smith</td>
-<td class="subject">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</td>
-<td></td>
-<td class="mail-date">11/11/16</td>
-</tr>
-<tr class="clickable-row">
-<td>
-<input type="checkbox" class="checkmail">
-</td>
-<td><span class="mail-important"><i class="fas fa-star starred"></i></span></td>
-<td class="name">Mike Litorus</td>
-<td class="subject">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</td>
-<td></td>
-<td class="mail-date">10/31/16</td>
 </tr>
 </tbody>
 </table>
@@ -527,7 +525,11 @@ Compose
 </div>
 </div>
 </div>
-</div>
+
+<footer>
+<p>Copyright © 2022 Dreamguys.</p>
+</footer>
+
 </div>
 
 </div>
@@ -540,6 +542,8 @@ Compose
 <script src="js/feather.min.js"></script>
 
 <script src="js/jquery.slimscroll.min.js"></script>
+
+<script src="js/datatables.min.js"></script>
 
 <script src="js/script.js"></script>
 </body>

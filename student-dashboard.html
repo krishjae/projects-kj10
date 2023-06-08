@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<title>Preskool - Dashboard</title>
+
+<link rel="shortcut icon" href="assets/img/favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/feather.css">
+
+<link rel="stylesheet" href="css/flags.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/all.min.css">
+
+<link rel="stylesheet" href="css/simple-calendar.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div class="header-left">
+<a href="index.html" class="logo">
+<img src="images/cnc.jpg" alt="Logo">
+</a>
+<a href="index.html" class="logo logo-small">
+<img src="images/logo-small.png" alt="Logo" width="30" height="30">
+</a>
+</div>
+
+<div class="menu-toggle">
+<a href="javascript:void(0);" id="toggle_btn">
+<i class="fas fa-bars"></i>
+</a>
+</div>
+
+<div class="top-nav-search">
+<form>
+<input type="text" class="form-control" placeholder="Search here">
+<button class="btn" type="submit"><i class="fas fa-search"></i></button>
+</form>
+</div>
+
+
+<a class="mobile_btn" id="mobile_btn">
+<i class="fas fa-bars"></i>
+</a>
+
+
+<ul class="nav user-menu">
+<li class="nav-item dropdown language-drop me-2">
+<a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+<img src="images/header-icon-01.svg" alt>
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="javascript:;"><i class="flag flag-lr me-2"></i>English</a>
+<a class="dropdown-item" href="javascript:;"><i class="flag flag-bl me-2"></i>Francais</a>
+<a class="dropdown-item" href="javascript:;"><i class="flag flag-cn me-2"></i>Turkce</a>
+</div>
+</li>
+
+<li class="nav-item dropdown noti-dropdown me-2">
+<a href="#" class="dropdown-toggle nav-link header-nav-list" data-bs-toggle="dropdown">
+<img src="images/header-icon-05.svg" alt>
+</a>
+<div class="dropdown-menu notifications">
+<div class="topnav-dropdown-header">
+<span class="notification-title">Notifications</span>
+<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+</div>
+<div class="noti-content">
+<ul class="notification-list">
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt="User Image" src="images/avatar-02.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Carlson Tech</span> has approved <span class="noti-title">your estimate</span></p>
+<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt="User Image" src="images/avatar-11.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">International Software Inc</span> has sent you a invoice in the amount of <span class="noti-title">$218</span></p>
+<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt="User Image" src="images/avatar-17.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">John Hendry</span> sent a cancellation request <span class="noti-title">Apple iPhone XR</span></p>
+<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-13.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Mercury Software Inc</span> added a new product <span class="noti-title">Apple MacBook Pro</span></p>
+<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="topnav-dropdown-footer">
+<a href="#">View all Notifications</a>
+</div>
+</div>
+</li>
+
+<li class="nav-item zoom-screen me-2">
+<a href="#" class="nav-link header-nav-list">
+<img src="images/header-icon-04.svg" alt>
+</a>
+</li>
+
+<li class="nav-item dropdown has-arrow new-user-menus">
+<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+<span class="user-img">
+<img class="rounded-circle" src="images/avatar-01.jpg" width="31" alt="Ryan Taylor">
+<div class="user-text">
+<h6>ZAYN</h6>
+<p class="text-muted mb-0">Administrator</p>
+</div>
+</span>
+</a>
+<div class="dropdown-menu">
+<div class="user-header">
+<div class="avatar avatar-sm">
+<img src="images/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+</div>
+<div class="user-text">
+<h6>ZAYN</h6>
+<p class="text-muted mb-0">Administrator</p>
+</div>
+</div>
+<a class="dropdown-item" href="profile.html">My Profile</a>
+<a class="dropdown-item" href="inbox.html">Inbox</a>
+<a class="dropdown-item" href="login.html">Logout</a>
+</div>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="menu-title">
+<span>Main Menu</span>
+</li>
+<li class="submenu active">
+<a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="index.html">Admin Dashboard</a></li>
+<li><a href="teacher-dashboard.html">Teacher Dashboard</a></li>
+<li><a href="student-dashboard.html" class="active">Student Dashboard</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="students.html">Student List</a></li>
+<li><a href="student-details.html">Student View</a></li>
+<li><a href="add-student.html">Student Add</a></li>
+<li><a href="edit-student.html">Student Edit</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="teachers.html">Teacher List</a></li>
+<li><a href="teacher-details.html">Teacher View</a></li>
+<li><a href="add-teacher.html">Teacher Add</a></li>
+<li><a href="edit-teacher.html">Teacher Edit</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="departments.html">Department List</a></li>
+<li><a href="add-department.html">Department Add</a></li>
+<li><a href="edit-department.html">Department Edit</a></li>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><i class="fas fa-book-reader"></i> <span> Subjects</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="subjects.html">Subject List</a></li>
+<li><a href="add-subject.html">Subject Add</a></li>
+<li><a href="edit-subject.html">Subject Edit</a></li>
+</ul>
+</li>
+<li class="submenu">
+    <a href="#"><i class="fas fa-clipboard"></i> <span> HOD</span> <span class="menu-arrow"></span></a>
+    <ul>
+        <li><a href="students.html">Student List</a></li>
+        <li><a href="student-details.html">Student View</a></li>
+        <li><a href="add-student.html">Student Add</a></li>
+        <li><a href="edit-student.html">Student Edit</a></li>
+        <li><a href="teacher-details.html">Teacher View</a></li>
+    <li><a href="add-teacher.html">Teacher Add</a></li>
+    <li><a href="edit-teacher.html">Teacher Edit</a></li>
+        </ul>
+    </li>
+    <li class="menu-title">
+    <span>Management</span>
+    </li>
+    <li>
+    <a href="holiday.html"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
+    </li>
+    <li>
+    <a href="exam.html"><i class="fas fa-clipboard-list"></i> <span>Exam list</span></a>
+    </li>
+    <li>
+    <a href="event.html"><i class="fas fa-calendar-day"></i> <span>Events</span></a>
+    </li>
+    <li>
+    <a href="library.html"><i class="fas fa-book"></i> <span>Library</span></a>
+    </li>
+    <li class="menu-title">
+    <span>Pages</span>
+    </li>
+    <li class="submenu">
+    <a href="#"><i class="fas fa-shield-alt"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
+    <ul>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="forgot-password.html">Forgot Password</a></li>
+    <li><a href="error-404.html">Error Page</a></li>
+    </ul>
+<li>
+<a href="blank-page.html"><i class="fas fa-file"></i> <span>Blank Page</span></a>
+</li>
+<li class="submenu">
+<a href="javascript:void(0);"><i class="fas fa-code"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
+<ul>
+<li class="submenu">
+<a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="javascript:void(0);"><span>Level 2</span></a></li>
+<li class="submenu">
+<a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="javascript:void(0);">Level 3</a></li>
+<li><a href="javascript:void(0);">Level 3</a></li>
+</ul>
+</li>
+<li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0);"> <span>Level 1</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="row">
+<div class="col-sm-12">
+<div class="page-sub-header">
+<h3 class="page-title">Welcome AKSHY!</h3>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+<li class="breadcrumb-item active">Student</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-xl-3 col-sm-6 col-12 d-flex">
+<div class="card bg-comman w-100">
+<div class="card-body">
+<div class="db-widgets d-flex justify-content-between align-items-center">
+<div class="db-info">
+<h6>TOTAL CLASS</h6>
+<h3>70/100</h3>
+</div>
+<div class="db-icon">
+<img src="images/teacher-icon-01.svg" alt="Dashboard Icon">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-sm-6 col-12 d-flex">
+<div class="card bg-comman w-100">
+<div class="card-body">
+<div class="db-widgets d-flex justify-content-between align-items-center">
+<div class="db-info">
+<h6>ASSIGNMENTS</h6>
+<h3>5/10</h3>
+</div>
+<div class="db-icon">
+<img src="images/teacher-icon-02.svg" alt="Dashboard Icon">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-sm-6 col-12 d-flex">
+<div class="card bg-comman w-100">
+<div class="card-body">
+<div class="db-widgets d-flex justify-content-between align-items-center">
+<div class="db-info">
+<h6>ATTENDANCE</h6>
+<h3>92%</h3>
+</div>
+<div class="db-icon">
+<img src="images/student-icon-01.svg" alt="Dashboard Icon">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-sm-6 col-12 d-flex">
+<div class="card bg-comman w-100">
+<div class="card-body">
+<div class="db-widgets d-flex justify-content-between align-items-center">
+<div class="db-info">
+<h6>Test Passed</h6>
+<h3>15/20</h3>
+</div>
+<div class="db-icon">
+<img src="images/student-icon-02.svg" alt="Dashboard Icon">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-12 col-lg-12 col-xl-8">
+<div class="card flex-fill comman-shadow">
+<div class="card-header">
+<div class="row align-items-center">
+<div class="col-6">
+<h5 class="card-title">Today’s Lesson</h5>
+</div>
+<div class="col-6">
+<ul class="chart-list-out">
+<li><span class="circle-blue"></span><span class="circle-gray"></span><span class="circle-gray"></span></li>
+<li class="lesson-view-all"><a href="#">View All</a></li>
+<li class="star-menus"><a href="javascript:;"><i class="fas fa-ellipsis-v"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="dash-circle">
+<div class="row">
+<div class="col-lg-3 col-md-3 dash-widget1">
+<div class="circle-bar circle-bar2">
+<div class="circle-graph2" data-percent="80">
+<b>80%</b>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="dash-details">
+<div class="lesson-activity">
+<div class="lesson-imgs">
+<img src="images/lesson-icon-01.svg" alt>
+</div>
+<div class="views-lesson">
+<h5>Class</h5>
+<h4>DBMS</h4>
+</div>
+</div>
+<div class="lesson-activity">
+<div class="lesson-imgs">
+<img src="images/lesson-icon-02.svg" alt>
+</div>
+<div class="views-lesson">
+<h5>Lessons</h5>
+<h4>5 Lessons</h4>
+</div>
+</div>
+<div class="lesson-activity">
+<div class="lesson-imgs">
+<img src="images/lesson-icon-03.svg" alt>
+</div>
+<div class="views-lesson">
+<h5>Time</h5>
+<h4>45min</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="dash-details">
+<div class="lesson-activity">
+<div class="lesson-imgs">
+<img src="images/lesson-icon-04.svg" alt>
+</div>
+<div class="views-lesson">
+<h5>Asignment</h5>
+<h4>1 Asignment</h4>
+</div>
+</div>
+<div class="lesson-activity">
+<div class="lesson-imgs">
+<img src="images/lesson-icon-05.svg" alt>
+</div>
+<div class="views-lesson">
+<h5>Staff</h5>
+<h4>DEEPTHI</h4>
+</div>
+</div>
+<div class="lesson-activity">
+<div class="lesson-imgs">
+<img src="images/lesson-icon-06.svg" alt>
+</div>
+<div class="views-lesson">
+<h5>Lesson Learned</h5>
+<h4>10/50</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-center">
+<div class="skip-group">
+<button type="submit" class="btn btn-info skip-btn">skip</button>
+<button type="submit" class="btn btn-info continue-btn">Continue</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-lg-12 col-xl-12 d-flex">
+<div class="card flex-fill comman-shadow">
+<div class="card-header">
+<div class="row align-items-center">
+<div class="col-6">
+<h5 class="card-title">Learning Activity</h5>
+</div>
+<div class="col-6">
+<ul class="chart-list-out">
+<li><span class="circle-blue"></span>Teacher</li>
+<li><span class="circle-green"></span>Student</li>
+<li class="star-menus"><a href="javascript:;"><i class="fas fa-ellipsis-v"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card-body">
+<div id="apexcharts-area"></div>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-12 col-xl-12 d-flex">
+<div class="card flex-fill comman-shadow">
+<div class="card-header d-flex align-items-center">
+<h5 class="card-title">ASSIGNMENTS SUBMITION</h5>
+<ul class="chart-list-out student-ellips">
+<li class="star-menus"><a href="javascript:;"><i class="fas fa-ellipsis-v"></i></a></li>
+</ul>
+</div>
+<div class="card-body">
+<div class="teaching-card">
+<ul class="steps-history">
+<li>Sep22</li>
+<li>Sep23</li>
+<li>Sep24</li>
+</ul>
+<ul class="activity-feed">
+<li class="feed-item d-flex align-items-center">
+<div class="dolor-activity">
+<span class="feed-text1"><a>DBMS</a></span>
+<ul class="teacher-date-list">
+<li><i class="fas fa-calendar-alt me-2"></i>September 5, 2022</li>
+<li>|</li>
+<li><i class="fas fa-clock me-2"></i>SUBMIT BEFORE 12</li>
+</ul>
+</div>
+<div class="activity-btns ms-auto">
+    <a class="btn btn-info" href="http://panel.codroid.host:2456/" class="button"> SUBMIT</a>
+</div>
+</li>
+<li class="feed-item d-flex align-items-center">
+<div class="dolor-activity">
+<span class="feed-text1"><a>JAVASCRIPT </a></span>
+<ul class="teacher-date-list">
+<li><i class="fas fa-calendar-alt me-2"></i>September 5, 2022</li>
+<li>|</li>
+<li><i class="fas fa-clock me-2"></i>SUBMIT BEFORE 12</li>
+</ul>
+</div>
+<div class="activity-btns complete ms-auto">
+    <a class="btn btn-info" href="http://panel.codroid.host:2456/" class="button"> SUBMIT</a>
+</div>
+</li>
+<li class="feed-item d-flex align-items-center">
+<div class="dolor-activity">
+<span class="feed-text1"><a>HTML5</a></span>
+<ul class="teacher-date-list">
+<li><i class="fas fa-calendar-alt me-2"></i>September 5, 2022</li>
+<li>|</li>
+<li><i class="fas fa-clock me-2"></i>SUBMIT BEFORE 12</li>
+</ul>
+</div>
+<div class="activity-btns ms-auto">
+    <a class="btn btn-info" href="http://panel.codroid.host:2456/" class="button"> SUBMIT</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-12 col-xl-4 d-flex">
+<div class="card flex-fill comman-shadow">
+<div class="card-body">
+<div id="calendar-doctor" class="calendar-container"></div>
+<div class="calendar-info calendar-info1">
+<div class="up-come-header">
+<h2>Upcoming Events</h2>
+<span><a href="javascript:;"><i class="feather-plus"></i></a></span>
+</div>
+<div class="upcome-event-date">
+<h3>10 oct</h3>
+<span><i class="fas fa-ellipsis-h"></i></span>
+</div>
+<div class="calendar-details">
+<p>08:00 am</p>
+<div class="calendar-box normal-bg">
+<div class="calandar-event-name">
+<h4>HTML5</h4>
+<h5>DEEPTHI</h5>
+</div>
+<span>08:00 - 09:00 am</span>
+</div>
+</div>
+<div class="calendar-details">
+<p>09:00 am</p>
+<div class="calendar-box normal-bg">
+<div class="calandar-event-name">
+<h4>CSS</h4>
+<h5>DEEPTHI</h5>
+</div>
+<span>09:00 - 10:00 am</span>
+</div>
+</div>
+<div class="calendar-details">
+<p>10:00 am</p>
+<div class="calendar-box normal-bg">
+<div class="calandar-event-name">
+<h4>DBMS</h4>
+<h5>DEEPTHI</h5>
+</div>
+<span>10:00 - 11:00 am</span>
+</div>
+</div>
+<div class="upcome-event-date">
+<h3>11 oct</h3>
+<span><i class="fas fa-ellipsis-h"></i></span>
+</div>
+<div class="calendar-details">
+<p>08:00 am</p>
+<div class="calendar-box normal-bg">
+<div class="calandar-event-name">
+<h4>HTML5</h4>
+<h5>DEEPTHI</h5>
+</div>
+<span>08:00 - 09:00 am</span>
+</div>
+</div>
+<div class="calendar-details">
+<p>09:00 am</p>
+<div class="calendar-box normal-bg">
+<div class="calandar-event-name">
+<h4>CSS </h4>
+<h5>DEEPTHI</h5>
+</div>
+<span>09:00 - 10:00 am</span>
+</div>
+</div>
+<div class="calendar-details">
+<p>10:00 am</p>
+<div class="calendar-box normal-bg">
+<div class="calandar-event-name">
+<h4>HTML5</h4>
+<h5>DEEPTHI</h5>
+</div>
+<span>10:00 - 11:00 am</span>
+</div>
+</div>
+<div class="calendar-details">
+<p>11:00 am</p>
+<div class="calendar-box break-bg">
+<div class="calandar-event-name">
+<h4>Break</h4>
+<h5>Break</h5>
+</div>
+<span>11:00 - 12:00 am</span>
+</div>
+</div>
+<div class="calendar-details">
+<p>11:30 am</p>
+<div class="calendar-box normal-bg">
+<div class="calandar-event-name">
+<h4>JAVASCRIPT</h4>
+<h5>DEEPTHI</h5>
+</div>
+<span>11:30 - 12:00 am</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>Copyright © 2023 KJ10.</p>
+</footer>
+
+</div>
+
+</div>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/feather.min.js"></script>
+
+<script src="js/jquery.slimscroll.min.js"></script>
+
+<script src="js/apexcharts.min.js"></script>
+<script src="js/chart-data.js"></script>
+
+<script src="js/jquery.simple-calendar.js"></script>
+<script src="js/calander.js"></script>
+
+<script src="js/circle-progress.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
